@@ -826,6 +826,56 @@ section,
   border-bottom: 2px solid var(--accent-color);
 }
 
+.hero .hero-actions {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero .hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  padding: 12px 24px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-family: var(--nav-font);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  transition: 0.3s ease;
+}
+
+.hero .hero-btn:hover {
+  transform: translateY(-3px);
+}
+
+.hero .hero-btn-primary {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  box-shadow: 0 16px 34px color-mix(in srgb, var(--accent-color), transparent 68%);
+}
+
+.hero .hero-btn-primary:hover {
+  background: color-mix(in srgb, var(--accent-color), white 12%);
+  color: var(--contrast-color);
+}
+
+.hero .hero-btn-secondary {
+  background: color-mix(in srgb, var(--surface-color), transparent 8%);
+  border-color: color-mix(in srgb, var(--default-color), transparent 65%);
+  color: var(--default-color);
+}
+
+.hero .hero-btn-secondary:hover {
+  background: color-mix(in srgb, var(--default-color), transparent 88%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 45%);
+  color: var(--contrast-color);
+}
+
 .hero .social-links {
   margin-top: 30px;
   display: flex;
@@ -859,6 +909,15 @@ section,
 
   .hero p {
     font-size: 20px;
+  }
+
+  .hero .hero-actions {
+    gap: 12px;
+  }
+
+  .hero .hero-btn {
+    width: 100%;
+    max-width: 260px;
   }
 }
 
